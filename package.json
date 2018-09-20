@@ -1,0 +1,25 @@
+{
+  "name": "Speed3D",
+  "version": "0.10.0",
+  "description": "Speed3DEngine. Engine",
+  "main": "Speed3DEngine.js",
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "author": "GuoBY,DongY,YanK,CaoG",
+  "license": "MIT",
+  "devDependencies": {
+    "globby": "^7.0.0",
+    "glsl-strip-comments": "^1.0.0",
+    "tape": "^4.8.0",
+    "text-encoding-utf-8": "^1.0.1"
+  },
+  "scripts": {
+    "tape" : "tape './DataStructure/R-Tree/test.js'",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build"
+  }
+}
