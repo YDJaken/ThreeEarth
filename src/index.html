@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speed3DEngine</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="Stats-output"></div>
+<div>
+        <span style="font-weight:bold;font-size:30px;">
+            <div id="scale_show"
+                 style="position: absolute;width:550px;height:200px;bottom:400px;right:10px;z-index:1;font-size:15px;">
+               <div style="float:left;" id = 'Scale_div'>
+                   <font id="Scale" size="3" color="black">比例尺：</font>
+               </div>
+           </div>
+        </span>
+
+</div>
+<div>
+        <span style="font-weight:bold;font-size:30px;">
+            <div id="level_show"
+                 style="position: absolute; width:550px;height:30px;bottom:360px;right:10px;z-index:1;font-size:15px;">
+               <div style="float:left;">
+                   <font id="Level" size="3" color="black">等级：</font><br/>
+               </div>
+           </div>
+        </span>
+
+</div>
+<div>
+        <span style="font-weight:bold;font-size:15px;">
+           <div id="latlng_show"
+                style="position:absolute;bottom:10px;right:10px;z-index:1;font-size:15px;">
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="lang" size="3" color="black">经度：</font>
+               </div>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="lat" size="3" color="black">纬度：</font>
+               </div>
+               <br/>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterx" size="3" color="black">墨卡托x：</font>
+               </div>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocatery" size="3" color="black">墨卡托y：</font>
+               </div>
+               <br/>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterxC" size="3" color="black">墨卡托Cesiumx：</font>
+               </div>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocateryC" size="3" color="black">墨卡托Cesiumy：</font>
+               </div>
+               <br/>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterlong" size="3" color="black">墨卡托经度：</font>
+               </div>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterlat" size="3" color="black">墨卡托纬度：</font>
+               </div>
+               <br/>
+                <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterlongC" size="3" color="black">墨卡托经度Cesium：</font>
+               </div>
+               <div style="width:300px;height:30px;float:left;">
+                   <font id="mocaterlatC" size="3" color="black">墨卡托纬度Cesium：</font>
+               </div>
+               <br/>
+               <div style="width:700px;height:30px;float:left;">
+                   <font id="startPoint" size="3" color="black">起点坐标：</font>
+               </div>
+               <br/>
+               <div style="width:700px;height:30px;float:left;">
+                   <font id="endPoint" size="3" color="black">终点坐标：</font>
+               </div>
+               <br/>
+               <div style="width:700px;height:30px;float:left;">
+                   <font id="distance" size="3" color="black">距离：</font>
+               </div>
+           </div>
+        </span>
+</div>
+<div id="webgl" style="height: 100%;width: 100%;"></div>
+<script type="module" src="Detector.js"></script>
+<script type="text/javascript" src="../thirdpart/stats.min.js"></script>
+<script type="module" src="TrackballControls.js"></script>
+<script type="module" src="Globe3.js"></script>
+</body>
+</html>
